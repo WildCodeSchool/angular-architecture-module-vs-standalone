@@ -1,0 +1,8 @@
+<!-- Ici, je peux appeler le sélecteur du composant HomeComponent car je l'ai importé dans ce composant (partie TS) -->
+<app-home></app-home>
+
+<!-- Je peux utiliser la directive [(ngModel)] car le FormsModule a été importé dans ce composant -->
+<input type="text" id="username" name="username" [(ngModel)]="username">
+
+<!-- Je peux utiliser le <router-outlet> car il a été importé dans la partie TS  -->
+<router-outlet></router-outlet>

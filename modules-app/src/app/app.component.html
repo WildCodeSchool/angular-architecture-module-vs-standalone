@@ -1,0 +1,8 @@
+<!-- Ici je peux appeler le selecteur du composant HomeComponent sans importer le composant HomeComponent dans le fichier app.component.ts parce qu'il appartient au même module que le AppComponent -->
+<app-home></app-home>
+
+<!-- Je peux utiliser la directive [(ngModel)] car le FormsModule a été importé dans le app.module.ts ; module dans lequel est déclaré mon composant AppComponent -->
+<input type="text" id="username" name="username" [(ngModel)]="username">
+
+<!-- Le router outlet est utilisable car importé dans le module (depuis le CommonModule) -->
+<router-outlet></router-outlet>
